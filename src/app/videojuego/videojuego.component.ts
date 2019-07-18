@@ -12,18 +12,18 @@ export class VideojuegoComponent implements OnInit, DoCheck, OnDestroy{
 	constructor(){
 		this.titulo = "Componente de Videojuegos (2)";
 		this.listado = "Listado Juegos más populares";
-		console.log("Se ha cargado el componente videojuego.component.ts");
+	//	console.log("Se ha cargado el componente videojuego.component.ts");
 	}
 
 	ngOnInit() {
-		console.log("Componente Videojuegos: OnInit Ejecutado !!");
+		//console.log("Componente Videojuegos: OnInit Ejecutado !!");
   	}
 
    // DoCheck --> Se ejecuta cuando se realiza algun cambio en el componente
    //             o en la aplicacion de angular en general
 
    ngDoCheck(){
-   		console.log("Componente Videojuegos: DoCheck Ejecutado !!");
+   	//	console.log("Componente Videojuegos: DoCheck Ejecutado !!");
    }
 
    cambiarTitulo(){
