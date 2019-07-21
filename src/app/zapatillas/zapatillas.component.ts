@@ -11,8 +11,12 @@ export class ZapatillasComponent implements OnInit{
 	public titulo: string = "Componente de Zapatillas";
 	public zapatillas: Array<Zapatilla>;
 	public marcas : Array<string>;
+	public color : string;
+	public mi_marca : string;
 
 	constructor(){
+
+		this.color = "red";
 		this.marcas = new Array();
 		this.zapatillas =[
 			new Zapatilla('Nike Max PG','Nike', 'Amarillo',88, true),
@@ -41,4 +45,24 @@ export class ZapatillasComponent implements OnInit{
   		console.log(this.marcas);
   	}
 
+  	getMarca(){
+  		alert(this.mi_marca);
+  	}
+
+  	addMarca(){
+  		this.marcas.push(this.mi_marca);
+  	}
+
+  	borrarMarca(index){
+  		this.marcas.splice(index,1);
+  	}
+
+  	onBlur(){
+  		console.log("Has salido del Input mi_marca");
+  	}
+
+  	mostrarPalabra(){
+  		console.log("La marca nueva es " + this.mi_marca);
+  		alert(this.mi_marca);
+  	}
 }
