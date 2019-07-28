@@ -6,14 +6,31 @@
   
 </div>
 
-<p [ngStyle]="{
+<div [ngStyle]="{
 			'background': config.fondo,
 			'border': '5px solid black',
-			'border-color': config.color
+			'border-color': config.color,
+			'margin': '5px',
+			'padding': '5px'
 				}">
+	
+
+
+<p> 
 {{ descripcion }}
 </p>
 
+<nav>
+	<a [routerLink]="['/home']" [routerLinkActive]="['active']"> Home </a>
+	&nbsp;
+	<a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']"> Zapatillas </a>
+	&nbsp;
+	<a [routerLink]="['/videojuego']" [routerLinkActive]="['active']"> VideoJuego </a>
+	&nbsp;
+	<a [routerLink]="['/cursos']" [routerLinkActive]="['active']"> Curso </a>
+</nav>
+
+<hr>
 <!--
 <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">
   Ocultar Videojuegos
@@ -29,4 +46,8 @@
 
 <cursos></cursos>  -->
 
-<zapatillas></zapatillas>
+<!--<zapatillas></zapatillas> -->
+
+<router-outlet></router-outlet>
+
+</div>
