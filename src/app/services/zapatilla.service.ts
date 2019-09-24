@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Zapatilla } from '../models/Zapatilla'
+import { Zapatilla } from '../models/Zapatilla';
 
 @Injectable()
 export class ZapatillaService{
